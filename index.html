@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Record Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+        }
+
+        th {
+            background-color: #2F5597;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #d9d9d9;
+        }
+
+        td {
+            padding: 8px 10px;
+            border: 1px solid #d9d9d9;
+            vertical-align: top;
+            color: #000000;
+        }
+
+        /* Color Coding Rows */
+        .bg-peach {
+            background-color: #FCE4D6;
+        }
+
+        .bg-green {
+            background-color: #E2EFDA;
+        }
+
+        .bg-blue {
+            background-color: #00B0F0;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .bg-white {
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Veng</th>
+                <th>Transfer Type</th>
+                <th>Final Type</th>
+                <th>Total Amt (Lakhs)</th>
+                <th>File Recording Category</th>
+                <th>Invoice Records (lakhs)</th>
+                <th>Details</th>
+                <th>Comment</th>
+                <th>Payer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Person 1 -->
+            <tr class="bg-peach">
+                <td rowspan="2">Person 1</td>
+                <td rowspan="2">aizawl</td>
+                <td rowspan="2">Sales</td>
+                <td rowspan="2">Sales</td>
+                <td rowspan="2">4</td>
+                <td rowspan="2">Software Delivery</td>
+                <td>3</td>
+                <td>Internal inventory system, Web portals, Dev & Maintainance contract</td>
+                <td rowspan="2">Business nei an nih chuan a tha lutuk. An website tur kan siamsak nghal dawn nia</td>
+                <td rowspan="2">Business</td>
+            </tr>
+            <tr class="bg-peach">
+                <td>1</td>
+                <td>Dev & Maintainance contract</td>
+            </tr>
+
+            <!-- Person 2 -->
+            <tr class="bg-peach">
+                <td>Person 2</td>
+                <td>aizawl</td>
+                <td>Sales</td>
+                <td>Sales</td>
+                <td>2</td>
+                <td>Imaging Service</td>
+                <td>2</td>
+                <td>Graphical design</td>
+                <td>An In tur design siam sak ang deuh an ni mai ang chu</td>
+                <td>Hausa pangai</td>
+            </tr>
+
+            <!-- Person 3 -->
+            <tr class="bg-green">
+                <td>Person 3</td>
+                <td>sesawng</td>
+                <td>Personal Xfr</td>
+                <td>NIL</td>
+                <td>3</td>
+                <td>Agricultural sale</td>
+                <td>3L</td>
+                <td>Agricultural sale</td>
+                <td>Cheque in a withdraw mai ang</td>
+                <td>Village guy</td>
+            </tr>
+
+            <!-- Person 4 -->
+            <tr class="bg-green">
+                <td>Person 4</td>
+                <td>aizawl</td>
+                <td>Sales</td>
+                <td>Sales</td>
+                <td>0.5</td>
+                <td>Consultancy</td>
+                <td>0.5</td>
+                <td>IT maintainance service</td>
+                <td></td>
+                <td>Business</td>
+            </tr>
+
+            <!-- Person 5 -->
+            <tr class="bg-green">
+                <td>Person 5</td>
+                <td>aizawl</td>
+                <td>Sales</td>
+                <td>Sales</td>
+                <td>0.5</td>
+                <td>Imaging Service</td>
+                <td>0.5</td>
+                <td>Graphical design</td>
+                <td></td>
+                <td>Mi pangai</td>
+            </tr>
+
+            <!-- Person 6 -->
+            <tr class="bg-green">
+                <td>Person 6</td>
+                <td>sesawng</td>
+                <td>Personal Xfr</td>
+                <td>NIL</td>
+                <td>1.5</td>
+                <td>Agricultural sale</td>
+                <td>1.5</td>
+                <td>Agricultural sale</td>
+                <td></td>
+                <td>Village guy</td>
+            </tr>
+
+            <!-- Person 4 (Highlighted) -->
+            <tr class="bg-blue">
+                <td>Person 4</td>
+                <td>sesawng</td>
+                <td>Personal Xfr</td>
+                <td>NIL</td>
+                <td>5.5</td>
+                <td>Land</td>
+                <td>5.5</td>
+                <td></td>
+                <td>Ka record ah lang lo tawp ang</td>
+                <td>land owner</td>
+            </tr>
+
+            <!-- Ruata -->
+            <tr class="bg-white">
+                <td>Ruata</td>
+                <td>aizawl</td>
+                <td>Personal Xfr</td>
+                <td>Return</td>
+                <td>23.8</td>
+                <td>Ruata to Me %1</td>
+                <td>23.8</td>
+                <td>Borrow with interest</td>
+                <td>
+                    section 10(26) ka claim anga, accept chuan tha<br><br>
+                    Accept loh takah 1.2 lakhs ang vel tax ka chawi ang
+                </td>
+                <td></td>
+            </tr>
+
+            <!-- Bottom Row -->
+            <tr class="bg-white">
+                <td></td>
+                <td></td>
+                <td>Cash</td>
+                <td>Cash</td>
+                <td>??</td>
+                <td></td>
+                <td>15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
